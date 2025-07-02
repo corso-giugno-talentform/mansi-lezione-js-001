@@ -301,3 +301,104 @@ let media = somma / 5;
 console.log('La somma tra i numeri equivale a ' + somma + ' e la
 media equivale a ' + media);
 ```
+
+## Appunti Short Circuit (domanda Giuseppe)
+
+- **Valori falsy** - JavaScript considera falsy: `false`, `0`, `""`, `null`, `undefined`, `NaN`
+    
+    ```jsx
+    
+    const count = 0;
+    const result = count || 10;// result sarà 10, non 0
+    ```
+    
+- **Operatore nullish coalescing (`??`)** - Introdotto in ES2020, controlla solo `null` e `undefined`
+    
+    ```jsx
+    
+    const count = 0;
+    const result = count ?? 10;// result sarà 0
+    
+    ```
+    
+
+### **Capitolo 5: Condizioni**
+
+Le condizioni permettono al programma di prendere decisioni ed eseguire codice diverso in base alle circostanze.
+
+### **If, Else If, Else**
+
+```jsx
+let voto = 85;
+
+if (voto >= 90) {
+    console.log("Ottimo!");
+} else if (voto >= 80) {
+    console.log("Buono!");
+} else if (voto >= 70) {
+    console.log("Discreto");
+} else if (voto >= 60) {
+    console.log("Sufficiente");
+} else {
+    console.log("Insufficiente");
+}
+
+```
+
+### **Operatore Ternario**
+
+```jsx
+// Sintassi: condizione ? valoreSeTruo : valoreSeFalso
+let eta = 17;
+let messaggio = eta >= 18 ? "Maggiorenne" : "Minorenne";
+console.log(messaggio); // "Minorenne"
+
+// Esempio pratico
+let temperatura = 25;
+let abbigliamento = temperatura > 20 ? "T-shirt" : "Giacca";
+
+```
+
+### **Switch Statement**
+
+```jsx
+let giorno = "lunedì";
+
+switch (giorno) {
+    case "lunedì":
+        console.log("Inizio settimana!");
+        break;
+    case "venerdì":
+        console.log("Quasi weekend!");
+        break;
+    case "sabato":
+    case "domenica":
+        console.log("Weekend!");
+        break;
+    default:
+        console.log("Giorno feriale normale");
+}
+
+```
+
+### **Valori Truthy e Falsy**
+
+```jsx
+// Valori falsy: false, 0, "", null, undefined, NaN
+// Tutto il resto è truthy
+
+if ("") {
+    console.log("Non verrà mai eseguito");
+}
+
+if ("ciao") {
+    console.log("Questo verrà eseguito"); // Le stringhe non vuote sono truthy
+}
+
+```
+
+### **Esercizi**
+
+**Esercizio 5.1**: Crea un programma che determini la stagione basandosi sul mese (1-12) usando switch statement.
+
+**Esercizio 5.2**: Crea un sistema di valutazione che, data un'età, determini la categoria (bambino 0-12, adolescente 13-17, adulto 18-64, anziano 65+) e suggerisca un'attività appropriata. Gestire casistica di numeri negativi
