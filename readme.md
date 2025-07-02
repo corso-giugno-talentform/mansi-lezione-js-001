@@ -451,3 +451,66 @@ for (let i = 0; i < 10; i++) {
 - Se il numero e’ multiplo di 3 deve stampare “Vostro Nome”;
 - Se multiplo di 5 deve stampare “Cognome”;
 - Se multiplo di 3 e 5 (15) deve stampare “Nome e Cognome”;
+
+### **Capitolo 7: Funzioni**
+
+Le funzioni sono blocchi di codice riutilizzabili che eseguono compiti specifici.
+
+### **Dichiarazione e Invocazione**
+
+```jsx
+// Dichiarazione
+function saluta() {
+    console.log("Ciao a tutti!");
+}
+
+// Invocazione
+saluta(); // "Ciao a tutti!"
+
+// Funzione con parametri
+function salutaPersona(nome) {
+    console.log("Ciao " + nome + "!");
+}
+
+salutaPersona("Marco"); // "Ciao Marco!"
+
+// Funzione con return
+function somma(a, b) {
+    return a + b;
+}
+
+let risultato = somma(5, 3);
+console.log(risultato); // 8
+
+```
+
+### **Scope delle Variabili**
+
+```jsx
+let globale = "Visibile ovunque";
+
+function esempioDiScope() {
+    let locale = "Visibile solo qui dentro";
+    console.log(globale); // Funziona
+    console.log(locale);  // Funziona
+}
+
+esempioDiScope();
+// console.log(locale); // ERRORE: locale non è definita qui
+
+```
+
+### **Esercizi**
+
+**Esercizio 7.1**: Crea una funzione `calcolatrice` che prenda tre parametri (numero1, numero2, operazione) e restituisca il risultato. L'operazione può essere "+", "-", "*", "/".
+
+**Esercizio 7.2:** Utilizzando un approccio funzionale (piccole funzioni che risolvono un piccolo problema), riscrivere il programma fatto in precedenza che stampi in console tutti i numeri da 1 a 30. (usare 2 funzioni massimo)
+
+- Se il numero e’ multiplo di 3 deve stampare “Vostro Nome”;
+- Se multiplo di 5 deve stampare “Cognome”;
+- Se multiplo di 3 e 5 (15) deve stampare “Nome e Cognome”;
+
+**Esercizio 7.3:** Scrivere un programma funzionale che, dato un numero in input (max), stampi a video:
+
+- PRIMA tutti i numeri Dispari
+- DOPO tutti i numeri PARI
