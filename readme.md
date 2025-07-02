@@ -402,3 +402,52 @@ if ("ciao") {
 **Esercizio 5.1**: Crea un programma che determini la stagione basandosi sul mese (1-12) usando switch statement.
 
 **Esercizio 5.2**: Crea un sistema di valutazione che, data un'età, determini la categoria (bambino 0-12, adolescente 13-17, adulto 18-64, anziano 65+) e suggerisca un'attività appropriata. Gestire casistica di numeri negativi
+
+### **Capitolo 6: Cicli**
+
+### **Teoria**
+
+I cicli permettono di ripetere blocchi di codice più volte, evitando duplicazioni.
+
+### **Ciclo For**
+
+```jsx
+// Sintassi: for (inizializzazione; condizione; incremento)
+for (let i = 0; i < 5; i++) {
+    console.log("Iterazione numero: " + i);
+}
+
+```
+
+### **Break e Continue**
+
+```jsx
+// Break: esce dal ciclo
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // Esce dal ciclo quando i è 5
+    }
+    console.log(i); // Stampa 0, 1, 2, 3, 4
+}
+
+// Continue: salta all'iterazione successiva
+for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) {
+        continue; // Salta i numeri pari
+    }
+    console.log(i); // Stampa solo 1, 3, 5, 7, 9
+}
+
+```
+
+### **Esercizi**
+
+**Esercizio 6.1**: Crea un programma che calcoli la somma di tutti i numeri da 1 a 100 usando un ciclo for.
+
+**Esercizio 6.2**: Crea un programma che stampi la tabellina di un numero (scelto da te) da 1 a 10, saltando il numero 5 usando continue.
+
+**Esercizio 6.3**: FIZZ-BUZZ: Utilizzando la logica appena appresa con l’operatore Modulo, scrivere un programma che stampi in console tutti i numeri da 1 a 30.
+
+- Se il numero e’ multiplo di 3 deve stampare “Vostro Nome”;
+- Se multiplo di 5 deve stampare “Cognome”;
+- Se multiplo di 3 e 5 (15) deve stampare “Nome e Cognome”;
