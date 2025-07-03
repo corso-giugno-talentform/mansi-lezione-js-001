@@ -593,3 +593,67 @@ Aiuole = Nella parola "Aiuole" ci sono 5 vocali
 Alba = Nella parola "Alba" ci sono 2 vocali 
 Fgrty = Nella parola "Fgrty" ci sono 0 vocali
 ```
+
+### **Capitolo 9: Oggetti**
+
+Gli oggetti sono strutture dati che raggruppano proprietà e metodi correlati.
+
+### **Creazione e Accesso**
+
+```jsx
+// Creazione di un oggetto
+let persona = {
+    nome: "Mario",
+    cognome: "Rossi",
+    eta: 30,
+    citta: "Roma",
+    sposato: false
+};
+
+// Accesso alle proprietà
+console.log(persona.nome);           // "Mario" (dot notation)
+console.log(persona["cognome"]);     // "Rossi" (bracket notation)
+
+// Modifica proprietà
+persona.eta = 31;
+persona["citta"] = "Milano";
+
+// Aggiunta nuove proprietà
+persona.professione = "Programmatore";
+
+```
+
+### **Metodi negli Oggetti**
+
+```jsx
+let automobile = {
+    marca: "Toyota",
+    modello: "Corolla",
+    anno: 2020,
+    accesa: false,
+
+    // Metodi
+    accendi: function() {
+        this.accesa = true;
+        console.log("Auto accesa!");
+    },
+
+    spegni: function() {
+        this.accesa = false;
+        console.log("Auto spenta!");
+    },
+
+    info: function() {
+        return `${this.marca} ${this.modello} del ${this.anno}`;
+    }
+};
+
+// Utilizzo dei metodi
+automobile.accendi();      // "Auto accesa!"
+console.log(automobile.info()); // "Toyota Corolla del 2020"
+
+```
+
+### **Esercizi**
+
+**Esercizio 9.1**: Crea un oggetto "libro" con proprietà (titolo, autore, pagine, letto) e metodi per: mostrare info del libro, segnare come letto/non letto, calcolare tempo di lettura stimato (assumendo 1 pagina = 2 minuti).
