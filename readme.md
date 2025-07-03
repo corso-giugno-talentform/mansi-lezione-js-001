@@ -560,7 +560,7 @@ console.log(animali.sort())// ordinamento
 console.log(animali.reverse())// ordinamento 
 ```
 
-Esercizio 8.1: Dato il seguente array mischiato e confuso:
+**Esercizio 8.1**: Dato il seguente array mischiato e confuso:
 
 Un Anello per domarli, un Anello per trovarli, un Anello per ghermirli e nel buio incatenarli.
 
@@ -579,4 +579,17 @@ let array_2 = [
   [['domarli,', 'passare'], 'buio']
 ];
 
+```
+**Esercizio 8.2**: Crea un array con i nomi di 5 tuoi amici. Scrivi funzioni per: aggiungere un amico, rimuovere un amico dalla testa, cercare se un amico è nella lista, mostrare tutti gli amici in ordine alfabetico.
+
+**Esercizio 8.3**: Dato un array di numeri [1, 15, 3, 8, 12, 9, 7, 20], usa i metodi degli array per: trovare e contaretutti i numeri maggiori di 10, calcolare la somma di tutti i numeri, creare un nuovo array con tutti i numeri moltiplicati per 2.
+
+**Esercizio 8.4**: Scrivere un programma che, data una stringa in input, conti quante vocali sono state inserite
+
+```jsx
+//Esempio
+
+Aiuole = Nella parola "Aiuole" ci sono 5 vocali 
+Alba = Nella parola "Alba" ci sono 2 vocali 
+Fgrty = Nella parola "Fgrty" ci sono 0 vocali
 ```
