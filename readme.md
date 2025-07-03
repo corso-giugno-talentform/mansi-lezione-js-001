@@ -514,3 +514,69 @@ esempioDiScope();
 
 - PRIMA tutti i numeri Dispari
 - DOPO tutti i numeri PARI
+
+### **Capitolo 8: Array e Metodi**
+
+Gli array sono strutture dati che contengono più valori in una singola variabile.
+
+### **Creazione e Accesso**
+
+```jsx
+// Creazione
+let frutti = ["mela", "banana", "arancia"];
+let numeri = [1, 2, 3, 4, 5];//omogenei
+let misto = ["testo", 42, true, null];//Disomogenei
+
+// Accesso agli elementi (indice inizia da 0)
+console.log(frutti[0]);    // "mela"
+console.log(frutti[1]);    // "banana"
+console.log(frutti.length); // 3
+
+// Modifica elementi
+frutti[0] = "pera";
+console.log(frutti); // ["pera", "banana", "arancia"]
+
+```
+
+### **Metodi degli Array**
+
+```jsx
+let animali = ["gatto", "cane"];
+
+// Aggiungere elementi
+animali.push("pesce");      // Aggiunge alla fine
+animali.unshift("uccello"); // Aggiunge all'inizio
+console.log(animali); // ["uccello", "gatto", "cane", "pesce"]
+
+// Rimuovere elementi
+animali.pop();    // Rimuove l'ultimo
+animali.shift();  // Rimuove il primo
+console.log(animali); // ["gatto", "cane"]
+
+// Altri metodi utili
+console.log(animali.indexOf("gatto")); // 0
+console.log(animali.includes("cane")); // true
+console.log(animali.sort())// ordinamento 
+console.log(animali.reverse())// ordinamento 
+```
+
+Esercizio 8.1: Dato il seguente array mischiato e confuso:
+
+Un Anello per domarli, un Anello per trovarli, un Anello per ghermirli e nel buio incatenarli.
+
+```js
+let array_1 = [
+  ['un', 'per', 'incatenarli.'],
+  ['Anello', 'trovarli,'],
+  ['ghermirli', 'e'],
+  ['gondor', 'mark'],
+];
+let array_2 = [
+  [['trovarli,']],
+  ['tu,', 'sciocchi'],
+  ['tu,', 'sciocchi', ['padron', 'Sauron']],
+  ['nel', ['fuggite', 'gandalf']],
+  [['domarli,', 'passare'], 'buio']
+];
+
+```
