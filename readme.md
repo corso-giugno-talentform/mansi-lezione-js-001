@@ -578,6 +578,24 @@ let array_2 = [
   ['nel', ['fuggite', 'gandalf']],
   [['domarli,', 'passare'], 'buio']
 ];
+console.log(
+	array_1[0][0],
+  array_1[1][0],
+  array_1[0][1],
+  array_2[3][0][0],
+  array_1[0][0],
+  array_1[1][0],
+  array_1[0][1],
+  array_2[0][0][0],
+  array_1[0][0],
+  array_1[1][0],
+  array_1[0][1],
+  array_1[2][0],
+  array_1[2][1],
+  array_2[2][0],
+  array_2[3][1],
+  array_1[0][2],
+)
 
 ```
 **Esercizio 8.2**: Crea un array con i nomi di 5 tuoi amici. Scrivi funzioni per: aggiungere un amico, rimuovere un amico dalla testa, cercare se un amico è nella lista, mostrare tutti gli amici in ordine alfabetico.
